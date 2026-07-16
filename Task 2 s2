@@ -1,0 +1,13 @@
+let totalRevenue = 0;
+let successfulOrders = 0;
+
+for (let i = 0; i < orders.length; i++) {
+
+    if (orders[i].status === "valid" && orders[i].stock === true) {
+
+        totalRevenue += orders[i].amount;
+        successfulOrders++;
+
+    }
+
+}
